@@ -3,17 +3,31 @@
   <head>
     <title>Carbon Footprint Calculator</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
    <script src="script.js"></script>
   </head>
   <body>
 
     <div class="container">
         <div class="heading">
+            <!-- <h1 style="font-family: 'Pacifico', cursive;">Carbon Footprint Calculator</h1> -->
             <h1>Carbon Footprint Calculator</h1>
         </div>
         <!-- <div class="box">
             
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime delectus eveniet, non qui beatae perspiciatis asperiores rerum. Error, qui repellat. Provident nulla suscipit dicta. Quasi dolores similique inventore facere explicabo iusto quaerat rerum quo iure placeat voluptatem incidunt fugit veritatis cumque repudiandae facilis sapiente, sunt voluptates rem. Vitae, quasi magnam?
+           Electricity : 637/KWh
+
+           lectricity : Input value (in KWh/Yr) X 0.85 (Emission Factor) =  Output value in (Kg of CO2)
+Petrol: Input Value(In Litres/Yr) X 2.296(Emission Factor) =  Output value in (Kg of CO2)
+Diesel: Input Value(In Litres/Yr) X 2.653 (Emission Factor) =  Output value in (Kg of CO2)
+LPG: Input Value(In Kg/Yr) X 2.983 (Emission Factor) =  Output value in (Kg of CO2)
+Your Carbon Footprint :  Add (1+2+3+4) = Output value in (Kg of CO2)
         </div> -->
 
         <div class="box">
@@ -25,26 +39,26 @@
                         <td><input type="number" id="electricity" name="electricity" value=0></td>
                     </tr>
                     <tr>
-                        <td><label for="gas">Natural gas usage (therms):</label></td>
+                        <td><label for="gas">LPG (litre):</label></td>
                         <td><input type="number" id="gas" name="gas" value=0></td>
                     </tr>
                     <tr>
-                        <td><label for="oil">OIl :</label></td>
+                        <td><label for="oil">Petrol (ltr per year):</label></td>
                         <td><input type="number" id="oil" name="oil" value=0></td>
                     </tr>
                     <tr>
-                        <td><label for="miles">Miles driven (per year):</label></td>
+                        <td><label for="miles">Diesel (ltr per year):</label></td>
                         <td><input type="number" id="miles" name="miles" value=0></td>
                     </tr>
                     <tr>
-                        <td><label for="flighta">Flights taken (duration less than 4 hours per year):</label> </td>
+                        <td><label for="flighta">Domestic Flights taken (duration less than 4 hours per year):</label> </td>
                         <td><input type="number" id="flighta" name="flight" value=0></td>
                     </tr>
                     <tr>
                         <td><label for="flightb">Flights taken (duration more than 4 hours per year):</label> </td>
                         <td><input type="number" id="flightb" name="flights" value=0></td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td> <label for="newspaper">Do you recycle your newspapers? :</label></td>
                         <td><input type="radio" name="newspaper" value="Yes" id="new1" checked>Yes
                             <input type="radio" name="newspaper" value="No" id="new2">No
@@ -55,7 +69,7 @@
                         <td><input type="radio" name="aluminum" value="Yes" id="Al1" checked>Yes
                             <input type="radio" name="aluminum" value="No" id="Al2">No
                         </td>
-                    </tr>
+                    </tr> -->
                 </table>
             </div>
             <div class="btn">
@@ -69,7 +83,7 @@
 
         <div class="box">
             <h2>Result:</h2>
-            <div id="result">sahdgkdsggkf</div>
+            <div id="result">...</div>
 
          </div>
     </div>    

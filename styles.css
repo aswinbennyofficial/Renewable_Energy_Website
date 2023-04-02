@@ -11,6 +11,14 @@ body{
 
 }
 
+
+/* h1{
+    color: aliceblue;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+} */
+
+
 .container{
     /* color: aliceblue;
     background-image: url("assets/bg.jpg");
@@ -32,12 +40,13 @@ body{
     /* margin-top: 30px; */
     padding: 10px;
     /* width: 500px; */
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     color: aliceblue;
-    background-color: #0c0707;
-    /* border-radius: 5px;
-    height: 75px; */
+    
+    background-color: #8484846b;
+    /* border-radius: 7px; */
+    /* height: 75px; */
 }
 
 .box{
