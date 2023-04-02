@@ -11,10 +11,10 @@
         <div class="heading">
             <h1>Carbon Footprint Calculator</h1>
         </div>
-        <div class="box">
+        <!-- <div class="box">
             
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime delectus eveniet, non qui beatae perspiciatis asperiores rerum. Error, qui repellat. Provident nulla suscipit dicta. Quasi dolores similique inventore facere explicabo iusto quaerat rerum quo iure placeat voluptatem incidunt fugit veritatis cumque repudiandae facilis sapiente, sunt voluptates rem. Vitae, quasi magnam?
-        </div>
+        </div> -->
 
         <div class="box">
 
@@ -22,31 +22,39 @@
                 <table>
                     <tr>
                         <td><label for="electricity">Electricity usage (kWh):</label></td>
-                        <td><input type="number" id="electricity" name="electricity" required></td>
+                        <td><input type="number" id="electricity" name="electricity" value=0></td>
                     </tr>
                     <tr>
                         <td><label for="gas">Natural gas usage (therms):</label></td>
-                        <td><input type="number" id="gas" name="gas" required></td>
+                        <td><input type="number" id="gas" name="gas" value=0></td>
+                    </tr>
+                    <tr>
+                        <td><label for="oil">OIl :</label></td>
+                        <td><input type="number" id="oil" name="oil" value=0></td>
                     </tr>
                     <tr>
                         <td><label for="miles">Miles driven (per year):</label></td>
-                        <td><input type="number" id="miles" name="miles" required></td>
+                        <td><input type="number" id="miles" name="miles" value=0></td>
                     </tr>
                     <tr>
-                        <td><label for="miles">Flights taken (duration less than 4 hours per year):</label> </td>
-                        <td><input type="number" id="miles" name="flight" required></td>
+                        <td><label for="flighta">Flights taken (duration less than 4 hours per year):</label> </td>
+                        <td><input type="number" id="flighta" name="flight" value=0></td>
                     </tr>
                     <tr>
-                        <td><label for="miles">Flights taken (duration more than 4 hours per year):</label> </td>
-                        <td><input type="number" id="miles" name="flights" required></td>
+                        <td><label for="flightb">Flights taken (duration more than 4 hours per year):</label> </td>
+                        <td><input type="number" id="flightb" name="flights" value=0></td>
                     </tr>
                     <tr>
-                        <td> <label for="miles">Do you recycle your newspapers? :</label></td>
-                        <td><input type="checkbox" id="miles" name="newspaper" required></td>
+                        <td> <label for="newspaper">Do you recycle your newspapers? :</label></td>
+                        <td><input type="radio" name="newspaper" value="Yes" id="new1" checked>Yes
+                            <input type="radio" name="newspaper" value="No" id="new2">No
+                        </td>
                     </tr>
                     <tr>
-                        <td> <label for="miles">Do you recycle your aluminum and tin? :</label></td>
-                        <td><input type="checkbox" id="miles" name="newspaper" required></td>
+                        <td> <label for="aluminum">Do you recycle your aluminum and tin? :</label></td>
+                        <td><input type="radio" name="aluminum" value="Yes" id="Al1" checked>Yes
+                            <input type="radio" name="aluminum" value="No" id="Al2">No
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -58,6 +66,12 @@
             
 
         </div>
+
+        <div class="box">
+            <h2>Result:</h2>
+            <div id="result">sahdgkdsggkf</div>
+
+         </div>
     </div>    
 
     

@@ -19,8 +19,10 @@ body{
     background-attachment: fixed;
     background-position: center; */
     backdrop-filter: blur(2px);
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    flex-direction: column;
     
 
 }
@@ -34,15 +36,16 @@ body{
     margin-right: auto;
     color: aliceblue;
     background-color: #0c0707;
-    border-radius: 5px;
-    height: 75px;
+    /* border-radius: 5px;
+    height: 75px; */
 }
 
 .box{
     border-radius: 5px;
     margin-top: 30px;
     padding: 20px;
-    width: 700px;
+    width: 80%;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     color: aliceblue;
@@ -58,6 +61,7 @@ body{
     display: flex;
     align-self: center;
     margin-top: 30px;
+    color: aquamarine;
 }
 
 
