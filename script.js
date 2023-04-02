@@ -25,8 +25,11 @@ else{
     al=1;
 }
 
+Number(news);
+Number(al);
 
-var total=56;
+
+var total=Number(elec)+Number(gas)+Number(oil)+Number(mile)+Number(fa)+Number(gb)+news+al;
 
 
 var mainDiv = document.getElementById("result");
