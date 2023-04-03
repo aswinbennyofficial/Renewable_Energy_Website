@@ -89,6 +89,9 @@ button{
 input{
     border-radius: 2px;
     border: none;
-    height: 20px;
+    height: 28px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    
 }
 
