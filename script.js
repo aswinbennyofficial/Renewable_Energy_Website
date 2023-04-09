@@ -32,8 +32,9 @@ var gb=document.getElementById("flightb").value;
 var total=Number(elec)*.085+Number(gas)*1.640+Number(oil)*2.62+Number(mile)*2.78+Number(fa)*.186+Number(gb)*.13 ;
 // +news+al;
 
+total=(Math.round(total * 100) / 100).toFixed(2);
 
 var mainDiv = document.getElementById("result");
-mainDiv.innerHTML = "<p><em>Your carbon emmission is: </em>"+total+"kg </p>";
+mainDiv.innerHTML = "<p><em>Your carbon emmission is: </em>"+total+" kg </p> ";
 
 }

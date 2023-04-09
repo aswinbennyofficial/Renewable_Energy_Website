@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
+
+
+   <script src="script.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="heading">
+            <!-- <h1 style="font-family: 'Pacifico', cursive;">Carbon Footprint Calculator</h1> -->
+            <h1><em>Carbon Footprint Calculator</em></h1>
+        </div>
+        <!-- <div class="box">
+            
+           Electricity : 637/KWh
+
+           lectricity : Input value (in KWh/Yr) X 0.85 (Emission Factor) =  Output value in (Kg of CO2)
+Petrol: Input Value(In Litres/Yr) X 2.296(Emission Factor) =  Output value in (Kg of CO2)
+Diesel: Input Value(In Litres/Yr) X 2.653 (Emission Factor) =  Output value in (Kg of CO2)
+LPG: Input Value(In Kg/Yr) X 2.983 (Emission Factor) =  Output value in (Kg of CO2)
+Your Carbon Footprint :  Add (1+2+3+4) = Output value in (Kg of CO2)
+        </div> -->
+
+        <div class="box">
+
+            <div class="forms">
+                <table>
+                    <tr>
+                        <td><label for="electricity">Electricity usage (kWh):</label></td>
+                        <td><input type="number" id="electricity" name="electricity" value=0></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gas">LPG (litre):</label></td>
+                        <td><input type="number" id="gas" name="gas" value=0></td>
+                    </tr>
+                    <tr>
+                        <td><label for="oil">Petrol (ltr per year):</label></td>
+                        <td><input type="number" id="oil" name="oil" value=0></td>
+                    </tr>
+                    <tr>
+                        <td><label for="miles">Diesel (ltr per year):</label></td>
+                        <td><input type="number" id="miles" name="miles" value=0></td>
+                    </tr>
+                    <tr>
+                        <td><label for="flighta">Domestic Flights (km per year):</label> </td>
+                        <td><input type="number" id="flighta" name="flight" value=0></td>
+                    </tr>
+                    <tr>
+                        <td><label for="flightb">International Flights(km per year):</label> </td>
+                        <td><input type="number" id="flightb" name="flights" value=0></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="btn">
+                <button type="button" id="calculate" onclick=alerter()>Calculate</button>
+            </div>
+            
+            
+            
+
+        </div>
+
+        <div class="box">
+            <h2>Result:</h2>
+            <div id="result">...</div>
+
+         </div>
+    </div>    
+
+    
+    
+    
+  </body>
+</html>

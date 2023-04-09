@@ -43,8 +43,8 @@ body{
     /* margin-left: auto;
     margin-right: auto; */
     color: aliceblue;
-    
-    background-color: #8484846b;
+    backdrop-filter: blur(8px);
+    background-color: #00000021;
     /* border-radius: 7px; */
     /* height: 75px; */
 }
@@ -78,7 +78,7 @@ button{
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

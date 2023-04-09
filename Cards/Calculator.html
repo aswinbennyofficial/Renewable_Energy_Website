@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="./../script.js"></script>
+    <title>Carbon Footprint Calculator</title>
+</head>
+<body class="bg-black bg-[url('./../assets/bg.jpg')]
+bg-no-repeat bg-cover">
+    <h1 class="text-white text-3xl font-bold text-center mt-4 " >Carbon Footprint Calculator</h1>
+    
+    
+    <div class="flex flex-wrap">
+        
+    <div class="rounded-lg bg-blue-500 p-8 mx-auto my-8 border-4 border-slate-300  w-2/3  box-content w-[500px] opacity-80 relative hover:opacity-100">
+        <button type="button" class="bg-white  p-2  text-gray-400 float-right hover:bg-gray-200 rounded-full absolute top-[0%] right-[0%]" onclick="window.location.href='./../index.html';">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        <div class="forms font-semibold text-white flex">
+            <table>
+                <tr class="mb-4">
+                    <td><label for="electricity">Electricity usage (kWh/year):</label></td>
+                    <td><input type="number" id="electricity" name="electricity" value=0 class="text-gray-600 rounded-md border-2 appearance-none mb-4"></td>
+                </tr>
+                <tr>
+                    <td><label for="gas">LPG (litre/year):</label></td>
+                    <td><input type="number" id="gas" name="gas" value=0 class="text-gray-600 rounded-md border-2 appearance-none mb-4"></td>
+                </tr>
+                <tr>
+                    <td><label for="oil">Petrol (ltr/year):</label></td>
+                    <td><input type="number" id="oil" name="oil" value=0 class="text-gray-600 rounded-md border-2 appearance-none mb-4"></td>
+                </tr>
+                <tr>
+                    <td><label for="miles">Diesel (ltr/year):</label></td>
+                    <td><input type="number" id="miles" name="miles" value=0 class="text-gray-600 rounded-md border-2 appearance-none mb-4"></td>
+                </tr>
+                <tr>
+                    <td><label for="flighta">Domestic Flights (km/year):</label> </td>
+                    <td><input type="number" id="flighta" name="flight" value=0 class="text-gray-600 rounded-md border-2 appearance-none mb-4"></td>
+                </tr>
+                <tr>
+                    <td><label for="flightb">International Flights(km/year):</label> </td>
+                    <td><input type="number" id="flightb" name="flights" value=0 class="text-gray-600 rounded-md border-2 appearance-none mb-4"></td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="btn flex justify-center mt-8">
+            <button class="bg-white text-blue-800 px-4 py-2 justify center rounded-md font-semibold " type="button" id="calculate" onclick=alerter()>Calculate</button>
+        </div>
+
+        
+    </div>
+    <div class="box rounded-lg bg-blue-500 p-8 mx-auto my-8 border-4 border-slate-300  w-2/3  box-content w-[300px] opacity-80 relative hover:opacity-100">
+        <h2 class="text-2xl text-white font-semibold my-2">Result:</h2>
+        <div id="result" class="text-white text-xl">....</div>
+        <button class="bg-white text-blue-800 px-4 py-2 justify center rounded-md font-semibold absolute bottom-[5%]" type="button" id="calculate" onclick="window.location.href='./ReduceFootprint.html';">Ways to Reduce Carbon Footprint</button>
+     </div>
+
+</div>
+</body>
+</html>

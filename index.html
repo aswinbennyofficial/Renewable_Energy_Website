@@ -1,95 +1,208 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Carbon Footprint Calculator</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-
-   <script src="script.js"></script>
-  </head>
-  <body>
-
-    <div class="container">
-        <div class="heading">
-            <!-- <h1 style="font-family: 'Pacifico', cursive;">Carbon Footprint Calculator</h1> -->
-            <h1><em>Carbon Footprint Calculator</em></h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    
+    <title>Home</title>
+</head>
+<body class="bg-black bg-black bg-[url('./../assets/bg.jpg')]
+bg-no-repeat bg-cover bg-fixed">
+    <div class="flex flex-wrap justify-center my-8 mx-2">
+       
+    
+    <div class=' bg-blue-500 w-[280px] rounded-lg m-10 relative hover:bg-green-600 border-4 border-slate-300'>
+    
+    <div class='flex flex-col  m-10 max-h-[500px]  bg-fixed items-center'>
+        
+        <div class='mt-5 p-1 '>
+            <img class='w-28 p-1 border-4 border-white  rounded-full m-3' src="./assets/ABioenergy.svg" alt="badge logo" />
         </div>
-        <!-- <div class="box">
+        <div class='flex items-center flex-col mb-3 mt-3'>
+            <p class='text-white  font-medium '> </p>
+            <p class='textjustify-items text-white text-xl font-semibold'> BioEnergy</p>
             
-           Electricity : 637/KWh
-
-           lectricity : Input value (in KWh/Yr) X 0.85 (Emission Factor) =  Output value in (Kg of CO2)
-Petrol: Input Value(In Litres/Yr) X 2.296(Emission Factor) =  Output value in (Kg of CO2)
-Diesel: Input Value(In Litres/Yr) X 2.653 (Emission Factor) =  Output value in (Kg of CO2)
-LPG: Input Value(In Kg/Yr) X 2.983 (Emission Factor) =  Output value in (Kg of CO2)
-Your Carbon Footprint :  Add (1+2+3+4) = Output value in (Kg of CO2)
-        </div> -->
-
-        <div class="box">
-
-            <div class="forms">
-                <table>
-                    <tr>
-                        <td><label for="electricity">Electricity usage (kWh):</label></td>
-                        <td><input type="number" id="electricity" name="electricity" value=0></td>
-                    </tr>
-                    <tr>
-                        <td><label for="gas">LPG (litre):</label></td>
-                        <td><input type="number" id="gas" name="gas" value=0></td>
-                    </tr>
-                    <tr>
-                        <td><label for="oil">Petrol (ltr per year):</label></td>
-                        <td><input type="number" id="oil" name="oil" value=0></td>
-                    </tr>
-                    <tr>
-                        <td><label for="miles">Diesel (ltr per year):</label></td>
-                        <td><input type="number" id="miles" name="miles" value=0></td>
-                    </tr>
-                    <tr>
-                        <td><label for="flighta">Domestic Flights (km per year):</label> </td>
-                        <td><input type="number" id="flighta" name="flight" value=0></td>
-                    </tr>
-                    <tr>
-                        <td><label for="flightb">International Flights(km per year):</label> </td>
-                        <td><input type="number" id="flightb" name="flights" value=0></td>
-                    </tr>
-                    <!-- <tr>
-                        <td> <label for="newspaper">Do you recycle your newspapers? :</label></td>
-                        <td><input type="radio" name="newspaper" value="Yes" id="new1" checked>Yes
-                            <input type="radio" name="newspaper" value="No" id="new2">No
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <label for="aluminum">Do you recycle your aluminum and tin? :</label></td>
-                        <td><input type="radio" name="aluminum" value="Yes" id="Al1" checked>Yes
-                            <input type="radio" name="aluminum" value="No" id="Al2">No
-                        </td>
-                    </tr> -->
-                </table>
-            </div>
-            <div class="btn">
-                <button type="button" id="calculate" onclick=alerter()>Calculate</button>
-            </div>
-            
-            
-            
+        </div>
+        <div class='m-3 flex flex-wrap justify-center'>
+         <button class='bg-white font-semibold  text-blue-500 p-2 text-sm m-2 rounded' onclick="window.location.href='./Cards/BioEnergy.html';" >Know More</button> 
+          
+        </div>
+        <div>
 
         </div>
-
-        <div class="box">
-            <h2>Result:</h2>
-            <div id="result">...</div>
-
-         </div>
-    </div>    
-
+    </div>
+    </div>
     
+    <!-- card 2 -->
+
+    <div class=' bg-blue-500 w-[280px] rounded-lg m-10 relative hover:bg-green-600 border-4 border-slate-300'>
     
+        <div class='flex flex-col  m-10 max-h-[500px]  bg-fixed items-center'>
+            
+            <div class='mt-5 p-1 '>
+                <img class='w-28 p-1 border-4 border-white  rounded-full m-3' src="./assets/Adam.svg" alt="badge logo" />
+            </div>
+            <div class='flex items-center flex-col mb-3 mt-3'>
+                <p class='text-white  font-medium '> </p>
+                <p class='textjustify-items text-white text-xl font-semibold'> Hydropower</p>
+                
+            </div>
+            <div class='m-3 flex flex-wrap justify-center'>
+             <button class='bg-white font-semibold  text-blue-500 p-2 text-sm m-2 rounded' onclick="window.location.href='./Cards/HydroEnergy.html';">Know More</button> 
+              
+            </div>
+            <div>
     
-  </body>
+            </div>
+        </div>
+        </div>
+    
+    <!-- card 3 -->
+
+    <div class=' bg-blue-500 max-w-[300px] rounded-lg m-10 relative hover:bg-green-600 border-4 border-slate-300'>
+    
+        <div class='flex flex-col  m-10 max-h-[500px]  bg-fixed items-center'>
+            
+            <div class='mt-5 p-1 '>
+                <img class='w-28 p-1 border-4 border-white  rounded-full m-3' src="./assets/Ageothermal.svg" alt="badge logo" />
+            </div>
+            <div class='flex items-center flex-col mb-3 mt-3'>
+                <p class='text-white  font-medium '> </p>
+                <p class='textjustify-items text-white text-xl font-semibold'> Geothermal Energy</p>
+                
+            </div>
+            <div class='m-3 flex flex-wrap justify-center'>
+             <button class='bg-white font-semibold  text-blue-500 p-2 text-sm m-2 rounded' onclick="window.location.href='./Cards/Geothermal.html';">Know More</button> 
+              
+            </div>
+            <div>
+    
+            </div>
+        </div>
+        </div>
+    
+    <!-- card 4 -->
+
+    <div class=' bg-blue-500 w-[280px] rounded-lg m-10 relative hover:bg-green-600 border-4 border-slate-300'>
+    
+        <div class='flex flex-col  m-10 max-h-[500px]  bg-fixed items-center'>
+            
+            <div class='mt-5 p-1 '>
+                <img class='w-28 p-1 border-4 border-white  rounded-full m-3' src="./assets/Aocean.svg" alt="badge logo" />
+            </div>
+            <div class='flex items-center flex-col mb-3 mt-3'>
+                <p class='text-white  font-medium '> </p>
+                <p class='textjustify-items text-white text-xl font-semibold'> Ocean Energy</p>
+                
+            </div>
+            <div class='m-3 flex flex-wrap justify-center'>
+             <button class='bg-white font-semibold  text-blue-500 p-2 text-sm m-2 rounded' onclick="window.location.href='./Cards/OceanEnergy.html';">Know More</button> 
+              
+            </div>
+            <div>
+    
+            </div>
+        </div>
+        </div>
+    
+    <!-- card 5 -->
+
+    <div class=' bg-blue-500 w-[280px] rounded-lg m-10 relative hover:bg-green-600 border-4 border-slate-300'>
+    
+        <div class='flex flex-col  m-10 max-h-[500px]  bg-fixed items-center'>
+            
+            <div class='mt-5 p-1 '>
+                <img class='w-28 p-1 border-4 border-white  rounded-full m-3' src="./assets/Asolarpanel.svg" alt="badge logo" />
+            </div>
+            <div class='flex items-center flex-col mb-3 mt-3'>
+                <p class='text-white  font-medium '> </p>
+                <p class='textjustify-items text-white text-xl font-semibold'> Solar Energy</p>
+                
+            </div>
+            <div class='m-3 flex flex-wrap justify-center'>
+             <button class='bg-white font-semibold  text-blue-500 p-2 text-sm m-2 rounded' onclick="window.location.href='./Cards/SolarEnergy.html';">Know More</button> 
+              
+            </div>
+            <div>
+    
+            </div>
+        </div>
+        </div>
+
+    <!-- card 6 -->
+
+    <div class=' bg-blue-500 w-[280px] rounded-lg m-10 relative hover:bg-green-600 border-4 border-slate-300'>
+    
+        <div class='flex flex-col  m-10 max-h-[500px]  bg-fixed items-center'>
+            
+            <div class='mt-5 p-1 '>
+                <img class='w-28 p-1 border-4 border-white  rounded-full m-3' src="./assets/Awindmill.svg" alt="badge logo" />
+            </div>
+            <div class='flex items-center flex-col mb-3 mt-3'>
+                <p class='text-white  font-medium '> </p>
+                <p class='textjustify-items text-white text-xl font-semibold'> Wind Energy</p>
+                
+            </div>
+            <div class='m-3 flex flex-wrap justify-center'>
+             <button class='bg-white font-semibold  text-blue-500 p-2 text-sm m-2 rounded' onclick="window.location.href='./Cards/WindEnergy.html';">Know More</button> 
+              
+            </div>
+            <div>
+    
+            </div>
+        </div>
+        </div>
+
+        <!-- card 5 -->
+
+    <div class=' bg-blue-500 w-[280px] rounded-lg m-10 relative hover:bg-green-600 border-4 border-slate-300'>
+    
+        <div class='flex flex-col  m-10 max-h-[500px]  bg-fixed items-center'>
+            
+            <div class='mt-5 p-1 '>
+                <img class='w-28 p-1 border-4 border-white  rounded-full m-3' src="./assets/ABlog.svg" alt="badge logo" />
+            </div>
+            <div class='flex items-center flex-col mb-3 mt-3'>
+                <p class='text-white  font-medium '> </p>
+                <p class='textjustify-items text-white text-xl font-semibold'> Blog</p>
+                
+            </div>
+            <div class='m-3 flex flex-wrap justify-center'>
+             <button class='bg-white font-semibold  text-blue-500 p-2 text-sm m-2 rounded' onclick="window.location.href='./Blogs.html';">Know More</button> 
+              
+            </div>
+            <div>
+    
+            </div>
+        </div>
+        </div>
+    
+    <!-- card 5 -->
+
+    <div class=' bg-blue-500 w-[280px] rounded-lg m-10 relative hover:bg-green-600 border-4 border-slate-300'>
+    
+        <div class='flex flex-col  m-10 max-h-[500px]  bg-fixed items-center'>
+            
+            <div class='mt-5 p-1 '>
+                <img class='w-28 p-1 border-4 border-white  rounded-full m-3' src="./assets/Acalculator.svg" alt="badge logo" />
+            </div>
+            <div class='flex items-center flex-col mb-3 mt-3'>
+                <p class='text-white  font-medium '> </p>
+                <p class='text-center text-white text-xl font-semibold'> Carbon Footprint Calculator</p>
+                
+            </div>
+            <div class='m-3 flex flex-wrap justify-center'>
+             <button class='bg-white font-semibold  text-blue-500 p-2 text-sm m-2 rounded' onclick="window.location.href='./Cards/Calculator.html';">Know More</button> 
+              
+            </div>
+            <div>
+    
+            </div>
+        </div>
+        </div>
+    
+    </div>
+</body>
 </html>
